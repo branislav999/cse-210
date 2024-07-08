@@ -1,11 +1,12 @@
 using System;
-
+using System.Collections.Generic;
+using System.IO;
 
 public class Scripture
 {
     private List<string> scripturelist;
 
-    public List<string> WordList(string scripture)
+    private List<string> WordList(string scripture)
     {
         List<string> words = new List<string>();
         string[] list = scripture.Split(' ');
